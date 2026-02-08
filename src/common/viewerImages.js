@@ -7,7 +7,11 @@ export default {
 		"wedding/gallery/4.jpg",
 		"wedding/gallery/5.jpg",
 		"wedding/gallery/6.jpg",
-		"wedding/gallery/7_h.jpg",
+		"wedding/gallery/7.jpg",
+		"wedding/gallery/8.jpg",
+		"wedding/gallery/9_h.jpg",
+		"wedding/gallery/10_h.jpg",
+		"wedding/gallery/11_h.jpg",
 	]
 
 }

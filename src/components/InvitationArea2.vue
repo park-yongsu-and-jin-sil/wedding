@@ -43,7 +43,7 @@ export default {
       female: {
         parents: "(故)진광훈 · 김복여",
         sub: "장녀",
-        name: "진ㅤ실"
+        name: "진 ㅤ실"
       },
     };
   },
