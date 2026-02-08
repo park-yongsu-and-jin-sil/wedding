@@ -53,11 +53,13 @@
       <p class="_large_text _green"><b>자가용</b></p>
       <Divider3 :padding-bottom="0" padding-right="44"/>
       <strong class="_small_text _black">서울/영등포 방면</strong><br>
-      시흥대로(안양 방면 직진) > 안양대교 > 안양역 > 만안구청 사거리 직진<br>
+      시흥대로(안양 방면 직진) > 안양대교 > 안양역<br>
+      > 만안구청 사거리 직진<br>
       > 웨딩그룹위더스 안양 (우측 위치)<br>
       <br>
       <strong class="_small_text _black">수원/군포 방면</strong><br>
-      1번 국도(서울 방면 직진) > 명학역 사거리 지나서 바로 우측<br>
+      1번 국도(서울 방면 직진)<br>
+      > 명학역 사거리 지나서 바로 우측<br>
       > 웨딩그룹위더스 안양<br>
     </div>
 
