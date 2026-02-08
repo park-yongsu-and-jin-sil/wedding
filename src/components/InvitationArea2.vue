@@ -14,8 +14,17 @@
     <Divider3 :padding-bottom="0" padding-right="24" padding-left="24"/>
 
     <div class="names _small_text _gray">
-      <p>{{ male.parents }}<span class="male">의 {{ male.sub }}</span><strong>{{ male.name }}</strong></p>
-      <p>{{ female.parents }}<span class="male">의 {{ female.sub }}</span><strong>{{ female.name }}</strong></p>
+      <span class="parents">{{ male.parents }}</span>
+      <span class="sub">의 {{ male.sub }}</span>
+      <strong class="name">
+        <span v-for="char in male.name" :key="char">{{ char }}</span>
+      </strong>
+
+      <span class="parents">{{ female.parents }}</span>
+      <span class="sub">의 {{ female.sub }}</span>
+      <strong class="name">
+        <span v-for="char in female.name" :key="char">{{ char }}</span>
+      </strong>
     </div>
 
 <!--    <div class="invi_main_blank"></div>-->
@@ -43,7 +52,7 @@ export default {
       female: {
         parents: "(故)진광훈 · 김복여",
         sub: "장녀",
-        name: "진 ㅤ실"
+        name: "진실"
       },
     };
   },
@@ -74,20 +83,47 @@ export default {
     color: #D7D7D7;
   }
   .names {
-    text-align: right;
-    line-height: 0;
-    letter-spacing: 3px;
     margin-top: 24px;
     padding-right: 68px;
-    .male {
-      font-size: 12.5px;
-      margin-left: 26px;
-      margin-right: 26px;
+
+    // 1층, 2층 상관없이 세로 칸을 일치시킵니다.
+    display: grid;
+    // [부모님: 자유너비] [관계: 75px] [이름: 80px]
+    grid-template-columns: auto 75px 80px;
+    justify-content: end; // 전체를 우측으로 정렬
+    align-items: center;
+    row-gap: 30px;
+    column-gap: 14px;
+
+    .parents {
+      text-align: right;
+      letter-spacing: 2px;
+      white-space: nowrap;
+      /* font-size는 상위 클래스를 따름 */
     }
-    .female {
+
+    .sub {
       font-size: 12.5px;
-      margin-left: 26px;
-      margin-right: 43px;
+      color: #888;
+      text-align: left;
+      letter-spacing: 1px;
+      white-space: nowrap;
+    }
+
+    .name {
+      width: 60px;
+      display: flex;
+      justify-content: space-between;
+
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 0; // flex space-between을 쓰므로 자간은 0으로 설정해야 끝이 맞음
+
+      span {
+        display: inline-block;
+        min-width: 14px; // 글자 자체가 차지하는 최소 너비
+        text-align: center;
+      }
     }
   }
   .names_image {
