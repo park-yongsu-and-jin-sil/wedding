@@ -84,12 +84,9 @@ export default {
   }
   .names {
     margin-top: 24px;
-    padding-right: 68px;
-
-    // 1층, 2층 상관없이 세로 칸을 일치시킵니다.
+    padding-right: 40px;
     display: grid;
-    // [부모님: 자유너비] [관계: 75px] [이름: 80px]
-    grid-template-columns: auto 75px 80px;
+    grid-template-columns: auto 50px 80px;
     justify-content: end; // 전체를 우측으로 정렬
     align-items: center;
     row-gap: 30px;
