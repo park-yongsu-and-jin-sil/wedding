@@ -146,29 +146,29 @@ export default {
       showFemaleContent: false,
       bankAccount: {
         male : {
-          name: "XXX",
+          name: "박용수",
           bankName: "국민은행",
-          account: "123456789"
+          account: "592201-01-631543"
         },
         maleParent: {
-          name: "XXX",
+          name: "신미애",
           bankName: "국민은행",
-          account: "123456789"
+          account: "592202-01-669901"
         },
         female: {
-          name: "XXX",
-          bankName: "국민은행",
-          account: "123456789"
+          name: "진실",
+          bankName: "우리은행",
+          account: "1002-153-817687"
         },
         femaleParent: {
-          name: "XXX",
-          bankName: "국민은행",
-          account: "123456789"
+          name: "김복여",
+          bankName: "우리은행",
+          account: "1002-052-487090"
         }
       },
       kakaoPay: {
-        male : "https://qr.kakaopay.com/FUI1VLcBZ",
-        female: "https://qr.kakaopay.com/Ej803zULX",
+        male : "https://qr.kakaopay.com/FFucPYgyc",
+        female: "https://qr.kakaopay.com/FPymsp8Uz",
       },
       showCopyCompleteModal: false,
     };

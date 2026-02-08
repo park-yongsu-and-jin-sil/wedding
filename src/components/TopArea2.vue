@@ -44,12 +44,12 @@ export default {
   },
   data() {
     return {
-      month: "08",
-      day: "31",
-      male: "XXX",
-      female: "YYY",
-      date: "2024년 8월 31일 토요일 오후 N시",
-      location: "어딘가 웨딩홀 ZZ홀(N층)"
+      month: "05",
+      day: "02",
+      male: "박용수",
+      female: "진실",
+      date: "2026년 5월 2일 토요일 오후 12:10",
+      location: "웨딩그룹위더스 안양 벨라(6층)"
     }
 
   },
